@@ -1,5 +1,5 @@
 [project]
-title = GBRausers
+title = Hyper GBRausers
 version = 0.1
 dependencies = https://github.com/britzl/ludobits/archive/1.1.1.zip
 
