@@ -144,7 +144,7 @@ function update(self, dt)
 	go.set_position(pos + self.camera_offset + CAMERA_OFFSET, "camera")
 
 	-- set trail pos
-	go.set_position(pos, go.get_id("/player/player_trail"))
+	go.set_position(pos - vmath.rotate(go.get_rotation(), vmath.vector3(0, 1.5, 0)), go.get_id("/player/player_trail"))
 end
 
 function on_message(self, message_id, message, sender)

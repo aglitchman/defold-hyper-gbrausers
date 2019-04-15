@@ -6,11 +6,10 @@ uniform lowp sampler2D texture1;
 
 void main()
 {
-    // Pre-multiply alpha since all runtime textures already are
-    lowp vec4 tint_pm = vec4(var_tint.xyz * var_tint.w, var_tint.w);
-    lowp vec4 color = texture2D(texture1, var_texcoord0.xy) * tint_pm;
+    lowp vec4 color = var_tint + texture2D(texture1, var_texcoord0.xy) * 0.0001; // to keep texture1
 
-    if (color.a < 1.0) discard;
+    if (color.a < 0.2) discard;
+    color.a = 1.0;
 
     gl_FragColor = color;
 }
