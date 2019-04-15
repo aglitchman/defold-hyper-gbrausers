@@ -1,6 +1,6 @@
 font: "/assets/font/smallest_pixel-7.ttf"
 material: "/assets/font/pixelfont.material"
-size: 9
+size: 10
 antialias: 0
 alpha: 1.0
 outline_alpha: 0.0

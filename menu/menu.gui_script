@@ -1,6 +1,6 @@
 local broadcast = require "ludobits.m.broadcast"
 
-local instructions = [[- GB Rausers -
+local instructions = [[- Hyper GB Rausers -
 
 A game by Bjorn Ritzl for GB Jam #5 using the Defold engine
 
