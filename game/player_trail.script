@@ -1,0 +1,33 @@
+local broadcast = require "ludobits.m.broadcast"
+local geometry = require "ludobits.m.geometry"
+
+function init(self)
+	local nothrust_color = vmath.vector4(0xC0 / 0xFF, 0xCF / 0xFF, 0xB5 / 0xFF, 0.0)
+	local thrust_color = vmath.vector4(0xC0 / 0xFF, 0xCF / 0xFF, 0xB5 / 0xFF, 1.0)
+
+	broadcast.register("stalling", function()
+		go.set("#trail_maker", "trail_tint_color", nothrust_color)
+	end)
+	broadcast.register("not_stalling", function()
+	end)
+	broadcast.register("thrusting", function()
+		go.set("#trail_maker", "trail_tint_color", thrust_color)
+	end)
+	broadcast.register("not_thrusting", function()
+		go.set("#trail_maker", "trail_tint_color", nothrust_color)
+	end)
+end
+
+function final(self)
+	broadcast.unregister("stalling")
+	broadcast.unregister("not_stalling")
+	broadcast.unregister("thrusting")
+	broadcast.unregister("not_thrusting")
+end
+
+function update(self, dt)
+end
+
+function on_message(self, message_id, message, sender)
+	broadcast.on_message(message_id, message, sender)
+end

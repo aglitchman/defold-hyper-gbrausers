@@ -137,11 +137,14 @@ function update(self, dt)
 	pos = pos + self.gravity * dt
 
 	go.set_position(pos)
-	
+
 	-- adjust camera
 	local target_offset = vmath.rotate(go.get_rotation(), UNITVECTOR_UP) * distance * 15
 	self.camera_offset = self.camera_offset + (target_offset - self.camera_offset) * dt
 	go.set_position(pos + self.camera_offset + CAMERA_OFFSET, "camera")
+
+	-- set trail pos
+	go.set_position(pos, go.get_id("/player/player_trail"))
 end
 
 function on_message(self, message_id, message, sender)
