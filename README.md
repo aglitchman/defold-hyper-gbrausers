@@ -1,12 +1,11 @@
-# GB Rausers
-A game inspired by [Luftrausers](http://www.luftrausers.com), made for [GB Jam #5](https://itch.io/jam/gbjam-5) using the [Defold engine](http://www.defold.com)
+# Hyper GB Rausers - GB Rausers with Hyper Trails
 
-I had initially planned to spend a lot more time on this game, but as always, life'n'stuff happened...
+GB Rausers inspired by [Luftrausers](http://www.luftrausers.com), made for [GB Jam #5](https://itch.io/jam/gbjam-5) using the [Defold engine](http://www.defold.com). Created by Björn Ritzl.
 
-Created by Björn Ritzl
+## Hyper Trails version
 
-# GB Jam #5 version
-This is the version submitted to GB Jam 5: https://britzl.itch.io/gbjamrausers
+This is the version with Hyper Trails effect: https://aglitchman.github.io/defold-hyper-gbrausers/
 
-# Improved version
-Play the improved version based on the current code base here: https://britzl.github.io/gbrausers/
+## Original version 
+
+Play the version based on the original code base here: https://britzl.github.io/gbrausers/
