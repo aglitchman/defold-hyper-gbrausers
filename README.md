@@ -1,5 +1,7 @@
 # Hyper GB Rausers - GB Rausers with Hyper Trails
 
+[![Build Status](https://travis-ci.com/aglitchman/defold-hyper-gbrausers.svg?branch=master)](https://travis-ci.com/aglitchman/defold-hyper-gbrausers)
+
 **GB Rausers** inspired by [Luftrausers](http://www.luftrausers.com), made for [GB Jam #5](https://itch.io/jam/gbjam-5) using the [Defold engine](http://www.defold.com). Created by Björn Ritzl.
 
 **Hyper Trails** is easy to use and customizable trail effect for the [Defold](http://www.defold.com) game engine: https://github.com/indiesoftby/defold-hyper-trails
